@@ -9,6 +9,7 @@ function start () {
   one()
     
   // Your turn! Create a new function called `two`, then call it from here.
+  two()
 }
 
 function one () {
@@ -22,7 +23,13 @@ function one () {
   one.addEventListener('mouseleave', makeWhite)
 }
 
-// CREATE FUNCTION two HERE
+function two () {
+  var two = document.getElementById('two')
+
+  two.addEventListener('mouseenter', makeGreen)
+
+  two.addEventListener('mouseleave', makeWhite)
+}
 
 // CREATE FUNCTION three HERE
 
